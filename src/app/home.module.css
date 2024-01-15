@@ -1,0 +1,50 @@
+.container{
+    margin-top: 30px;
+display: flex;
+gap:100px;
+}
+.textContainer{
+flex:1;
+display: flex;
+flex-direction: column;
+gap:50px;
+}
+.title{
+    font-size: 76px;
+}
+.desc{
+    font-size: 20px;
+}
+.buttons{
+    display: flex;
+    gap:20px;
+
+}
+.button{
+    padding:20px;
+    min-width: 120px;
+    cursor:pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.button:first-child{
+    background-color: var(--btn);
+    color:var(--text)
+}
+.button:hover
+{
+background-color: linear-gradient(to top, #0a95ff, #000203);
+
+}
+.brands{
+    width:500px;
+    height:50px;
+    position: relative;
+    filter:grayscale(1);
+}
+.imgContainer{
+    flex:1;
+    position: relative;
+}

@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    align-items: center;
+    gap:100px;
+}
+.imgContainer{
+    flex:1;
+    position: relative;
+    height:500px;
+}
+.formContainer{
+    flex:1;
+}
+.img{
+    object-fit: contain;
+    animation: animate-img 1s ease infinite alternate;
+}
+.form{
+display: flex;
+flex-direction: column;
+gap:20px;
+}
+.form input,.form textarea{
+    padding:20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: var(--bgSoft);
+    color:var(--text);
+}
+.form button{
+    padding:20px;
+    background-color: var(--btn);
+    color:var(--text);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@keyframes animate-img {
+    0%{
+        transform: translate(0,0);
+           
+    }
+  
+    100%{
+        transform: translate(-25px,-25px);
+       
+    }
+}
